@@ -1,0 +1,16 @@
+/*body{
+    background-image: url(../images/polka-dots.png)
+}*/
+
+.backGround{
+    background: lightgrey;
+    padding: 20px;
+}
+
+.creatingSpace{
+    margin-bottom: 20px;
+}
+
+.crystalHouse{
+    margin-bottom: 20px;
+}

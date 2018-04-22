@@ -5,47 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="css/text" href= "assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href= "assets/css/reset.css">
 
-    <link rel="stylesheet" type="css/text" href= "assets/css/style.css">
+    <link rel= "stylesheet" type = "text/css" href= "assets/css/style.css">
 </head>
 <body>
-    <h1>Crystal collectors</h1>
-    <br>
-    <div class="rules">
-        <p>You will be given a random number at the start of the game.</p>
-
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-
-        <p>Each time the game starts, the game will change the values of each crystal.</p>
-
-        
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">CrystalsCollector</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 rules backGround">
+                <h3>Rules:</h3>
+                <br>
+                <p>You will be given a random number at the start of the game.</p>
+                <br>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <br>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time the game starts, the game will change the values of each crystal.</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 backGround">
+                <div class="row creatingSpace">
+                    <div class="col-md-5">
+                        <div id="randomNumber"></div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div id="wins"></div>
+                        <br>
+                        <div id="losses"></div>
+                    </div>
+                </div>
+                <div class="row crystalHouse">
+                    <div class="col-md-3">
+                        <div id="crystalOne"> Crystal one</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="crystalTwo">Crystal two</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="crystalThree">Crystal Three</div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="crystalFour">Crystal four</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <p>Your total score is:</p>
+                        <div id="totalScore"></div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="randomNumber"></div>
-    <br>
-    <div id="wins"></div>
-    <br>
-    <div id="losses"></div>
-    <br>
 
-    <div class="crystalHouse">
 
-        <div id="crystalOne"> Crystal one</div>
-        <br>
-        <div id="crystalTwo">Crystal two</div>
-        <br>
-        <div id="crystalThree">Crystal three</div>
-        <br>
-        <div id="crystalFour">Crystal four</div>
-    </div>
 
-    <p>Your total score is:</p>
-    <div id="totalScore"></div>
+
+
     
 
 <script rel= "javascript/text" src= "assets/javascript/game.js"></script>
