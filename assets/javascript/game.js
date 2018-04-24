@@ -9,10 +9,10 @@ var crystalThree = Math.floor((Math.random() * 12) + 1);
 var crystalFour = Math.floor((Math.random() * 12) + 1);
 
 $(document).ready(function(){
-    document.getElementById("randomNumber").innerHTML = randomNumber;
-    document.getElementById("wins").innerHTML = "Wins: " + wins;
-    document.getElementById("losses").innerHTML = "Losses: " + losses;
-    document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
+    $("#randomNumber").text(randomNumber);
+    $("#wins").text("Wins: " + wins);
+    $("#losses").text("Losses: " + losses);
+    $("#totalScore").text("Your total score is: " + totalScore);
     console.log(crystalOne);
     console.log(crystalTwo);
     console.log(crystalThree);
@@ -21,7 +21,7 @@ $(document).ready(function(){
     $(".crystalHouse").on("click", "#crystalOne", function(){
         
         totalScore = totalScore + crystalOne;
-        document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
+        $("#totalScore").text("Your total score is: " + totalScore);
 
         if(totalScore === randomNumber){
             alert(totalScore + " You did it! To play again press OK");
