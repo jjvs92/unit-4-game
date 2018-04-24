@@ -12,60 +12,62 @@
     <link rel= "stylesheet" type = "text/css" href= "assets/css/style.css">
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" id="headerBackground">
         <div class="container">
-            <h1 class="display-4">CrystalsCollector</h1>
+            <h1 class="display-4" id="gameTitle">CrystalsCollector</h1>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-5 rules backGround">
-                <h3>Rules:</h3>
+            <div class="col-md-5 backGround">
+                <h3 class= "rules">Rules</h3>
                 <br>
-                <p>You will be given a random number at the start of the game.</p>
-                <br>
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-                <br>
-                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-                <br>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <br>
-                <p>Each time the game starts, the game will change the values of each crystal.</p>
+                <div class="actualRules">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <br>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <br>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                    <br>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <br>
+                    <p>Each time the game starts, the game will change the values of each crystal.</p>
+                </div>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5 backGround">
                 <div class="row creatingSpace">
                     <div class="col-md-5">
-                        <div id="randomNumber"></div>
+                        <div class="randomNumber" id="randomNumber"></div>
                     </div>
                     <div class="col-md-2"></div>
-                    <div class="col-md-5">
-                        <div id="wins"></div>
-                        <br>
-                        <div id="losses"></div>
+                    <div class="col-md-5">                       
+                        <div class="rightBoxFonts" id="totalScore"></div>
                     </div>
                 </div>
                 <div class="row crystalHouse">
                     <div class="col-md-3">
-                        <div id="crystalOne"> Crystal one</div>
+                        <image src="assets/images/crystal_one.jpg" alt="Crystal One" class="crystalImages" id="crystalOne"></image>
                     </div>
                     <div class="col-md-3">
-                        <div id="crystalTwo">Crystal two</div>
+                        <image src="assets/images/crystal_two.jpg" alt="Crystal Two" class="crystalImages" id="crystalTwo"></image>
                     </div>
                     <div class="col-md-3">
-                        <div id="crystalThree">Crystal Three</div>
+                        <image src="assets/images/crystal_three.jpg" alt="Crystal Three" class="crystalImages" id="crystalThree"></image>
                     </div>
                     <div class="col-md-3">
-                        <div id="crystalFour">Crystal four</div>
+                        <image src="assets/images/crystal_four.jpg" alt="Crystal Four" class="crystalImages" id="crystalFour"></image>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <p>Your total score is:</p>
-                        <div id="totalScore"></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div class="rightBoxFonts" id="wins"></div>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="rightBoxFonts" id="losses"></div>
+                    </div>
                 </div>
             </div>
         </div>

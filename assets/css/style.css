@@ -1,16 +1,54 @@
-/*body{
-    background-image: url(../images/polka-dots.png)
-}*/
+body{
+    background-image: url(../images/diamonds.png)
+}
+
+#headerBackground{
+    background: linear-gradient(#99ebff, #ffffff);
+    margin-bottom: 150px;
+}
 
 .backGround{
-    background: lightgrey;
+    background: linear-gradient(#b3f0ff, #ffffff);
     padding: 20px;
 }
 
 .creatingSpace{
     margin-bottom: 20px;
+    position: relative;
+    top: 30px;
 }
 
 .crystalHouse{
-    margin-bottom: 20px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.rules{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#gameTitle{
+    text-align: center;
+}
+
+.crystalImages{
+    width: 100%;
+}
+
+.rowTwoSpacing{
+    margin-top: 30px;
+}
+
+.randomNumber{
+    font-size: 60px;
+}
+
+.rightBoxFonts{
+    font-size: 30px;
+}
+
+.actualRules{
+    font-size: 20px;
 }

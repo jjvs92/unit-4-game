@@ -12,7 +12,7 @@ $(document).ready(function(){
     document.getElementById("randomNumber").innerHTML = randomNumber;
     document.getElementById("wins").innerHTML = "Wins: " + wins;
     document.getElementById("losses").innerHTML = "Losses: " + losses;
-    document.getElementById("totalScore").innerHTML = totalScore;
+    document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
     console.log(crystalOne);
     console.log(crystalTwo);
     console.log(crystalThree);
@@ -21,10 +21,10 @@ $(document).ready(function(){
     $(".crystalHouse").on("click", "#crystalOne", function(){
         
         totalScore = totalScore + crystalOne;
-        document.getElementById("totalScore").innerHTML = totalScore;
+        document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
 
         if(totalScore === randomNumber){
-            alert("You did it!");
+            alert(totalScore + " You did it! To play again press OK");
             wins ++;
             randomNumber = Math.floor((Math.random() * 119) + 1);
             crystalOne = Math.floor((Math.random() * 12) + 1);
@@ -32,14 +32,14 @@ $(document).ready(function(){
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);            
             totalScore = 0;
-            document.getElementById("totalScore").innerHTML = totalScore;            
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;            
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("wins").innerHTML = "Wins: " + wins;
 
         }        
 
         if(totalScore > randomNumber){
-            alert("You lose!");
+            alert( totalScore +" You lose! To play again press OK");
             losses ++;
             randomNumber = Math.floor((Math.random() * 119) + 1);
             crystalOne = Math.floor((Math.random() * 12) + 1);
@@ -47,7 +47,7 @@ $(document).ready(function(){
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);            
             totalScore = 0;      
-            document.getElementById("totalScore").innerHTML = totalScore;            
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;           
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("losses").innerHTML = "Losses: " + losses;                  
         }
@@ -56,23 +56,24 @@ $(document).ready(function(){
     $(".crystalHouse").on("click", "#crystalTwo", function(){
         
         totalScore = totalScore + crystalTwo;
-        document.getElementById("totalScore").innerHTML = totalScore;
+        document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
 
         if(totalScore === randomNumber){
             wins ++;
+            alert(totalScore + " You did it! To play again press OK");          
             randomNumber = Math.floor((Math.random() * 119) + 1);  
             totalScore = 0;
             crystalOne = Math.floor((Math.random() * 12) + 1);
             crystalTwo = Math.floor((Math.random() * 12) + 1);
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);               
-            document.getElementById("totalScore").innerHTML = totalScore;            
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;            
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("wins").innerHTML = "Wins: " + wins;                     
-            alert("You did it!");}   
+        }   
 
         if(totalScore > randomNumber){
-            alert("You lose!");
+            alert( totalScore +" You lose! To play again press OK");
             losses ++;
             randomNumber = Math.floor((Math.random() * 119) + 1);
             crystalOne = Math.floor((Math.random() * 12) + 1);
@@ -80,7 +81,7 @@ $(document).ready(function(){
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);            
             totalScore = 0;      
-            document.getElementById("totalScore").innerHTML = totalScore;            
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;            
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("losses").innerHTML = "Losses: " + losses;                  
         }            
@@ -90,10 +91,11 @@ $(document).ready(function(){
     $(".crystalHouse").on("click", "#crystalThree", function(){
         
         totalScore = totalScore + crystalThree;
-        document.getElementById("totalScore").innerHTML = totalScore;
+        document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
 
         if(totalScore === randomNumber){
             wins ++;
+            alert(totalScore + " You did it! To play again press OK");            
             randomNumber = Math.floor((Math.random() * 119) + 1);  
             totalScore = 0;   
             crystalOne = Math.floor((Math.random() * 12) + 1);
@@ -102,11 +104,10 @@ $(document).ready(function(){
             crystalFour = Math.floor((Math.random() * 12) + 1);               
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("wins").innerHTML = "Wins: " + wins;       
-            document.getElementById("totalScore").innerHTML = totalScore;            
-            alert("You did it!");}   
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;}   
 
         if(totalScore > randomNumber){
-            alert("You lose!");
+            alert( totalScore +" You lose! To play again press OK");
             losses ++;
             randomNumber = Math.floor((Math.random() * 119) + 1);
             crystalOne = Math.floor((Math.random() * 12) + 1);
@@ -114,7 +115,7 @@ $(document).ready(function(){
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);            
             totalScore = 0;      
-            document.getElementById("totalScore").innerHTML = totalScore;            
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;            
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("losses").innerHTML = "Losses: " + losses;                  
         }                  
@@ -124,23 +125,24 @@ $(document).ready(function(){
     $(".crystalHouse").on("click", "#crystalFour", function(){
         
         totalScore = totalScore + crystalFour;
-        document.getElementById("totalScore").innerHTML = totalScore;
+        document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
 
         if(totalScore === randomNumber){
             wins ++;
+            alert(totalScore + " You did it! To play again press OK");         
             randomNumber = Math.floor((Math.random() * 119) + 1);  
             totalScore = 0;
             crystalOne = Math.floor((Math.random() * 12) + 1);
             crystalTwo = Math.floor((Math.random() * 12) + 1);
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);               
-            document.getElementById("totalScore").innerHTML = totalScore;
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("wins").innerHTML = "Wins: " + wins;                      
-            alert("You did it!");}
+            }
 
         if(totalScore > randomNumber){
-            alert("You lose!");
+            alert( totalScore +" You lose! To play again press OK");
             losses ++;
             randomNumber = Math.floor((Math.random() * 119) + 1);
             crystalOne = Math.floor((Math.random() * 12) + 1);
@@ -148,7 +150,7 @@ $(document).ready(function(){
             crystalThree = Math.floor((Math.random() * 12) + 1);
             crystalFour = Math.floor((Math.random() * 12) + 1);            
             totalScore = 0;      
-            document.getElementById("totalScore").innerHTML = totalScore;            
+            document.getElementById("totalScore").innerHTML = "Your total score is: " + totalScore;            
             document.getElementById("randomNumber").innerHTML = randomNumber;
             document.getElementById("losses").innerHTML = "Losses: " + losses;                  
         }                  
